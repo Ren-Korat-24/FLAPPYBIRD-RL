@@ -18,6 +18,7 @@ Taking actions (flap or no flap)
 Receiving rewards
 Storing experiences in replay memory
 Updating Q-values using the Bellman Equation
+
 📂 Project Structure
 ├── agent.py                # Main training & testing logic
 ├── dqn.py                  # Neural network model
@@ -25,18 +26,22 @@ Updating Q-values using the Bellman Equation
 ├── game_flappy_bird.py     # Game environment
 ├── parameters.yaml         # Hyperparameters
 ├── runs/                   # Saved models & logs
+
 ⚙️ Installation
 git clone https://github.com/Ren-Korat-24/FLAPPYBIRD-RL
+
 cd flappy-bird-dqn
 
 pip install torch gymnasium flappy-bird-gymnasium pygame pyyaml
+
 ▶️ Usage
 Train the model
 python agent.py default -train
+
 Run trained model
 python agent.py default
-⚡ Hyperparameters
 
+⚡ Hyperparameters
 You can modify training behavior by editing parameters.yaml:
 
 Learning rate (alpha)
@@ -44,17 +49,19 @@ Discount factor (gamma)
 Epsilon decay (exploration strategy)
 Replay memory size
 Mini-batch size
-🖥️ Hardware Acceleration
 
+🖥️ Hardware Acceleration
 The code automatically selects the best available device:
 
 CUDA (NVIDIA GPU)
 MPS (Apple Silicon)
 CPU (fallback)
+
 📈 Output
 Best model saved in /runs directory
 Training logs stored automatically
 Reward improvements tracked per episode
+
 🎯 Future Improvements
 Double DQN
 Dueling Networks

@@ -26,7 +26,7 @@ Updating Q-values using the Bellman Equation
 ├── parameters.yaml         # Hyperparameters
 ├── runs/                   # Saved models & logs
 ⚙️ Installation
-git clone https://github.com/your-username/flappy-bird-dqn.git
+git clone https://github.com/Ren-Korat-24/FLAPPYBIRD-RL
 cd flappy-bird-dqn
 
 pip install torch gymnasium flappy-bird-gymnasium pygame pyyaml
